@@ -45,6 +45,8 @@ http://localhost:5000/donorschoose/projects
 7. prepare the front-end
 static\js\graphs.js
 
+due to date format issue, the data against time does not render propertly. date parse function is revised accordingly.  
+
 8. all the charts are written in templates/index.html
 
 http://localhost:5000/ to see the charts but it has debug issues. 
