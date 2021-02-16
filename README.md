@@ -1,4 +1,5 @@
-# This project is forked from the following post and repo and is built using
+# This project is forked from the following post and repo 
+The project built using updated packages as follows:
 * python 3.7.4
 * mongodb 4.4
 * D3.js and DC.js
