@@ -1,10 +1,9 @@
-# This project is forked from the following post and repo 
-The project built using updated packages as follows:
+# DonorsChoose_Visualization
+This project is forked from an existing repo and rebuilt with updated packages as follows:
 * python 3.7.4
 * mongodb 4.4
 * D3.js and DC.js
 ![](viz_demo.gif)
-# ===============================
 # DonorsChoose_Visualization
 * Source Code for my blog post: [Interactive Data Visualization with D3.js, DC.js, Python, and MongoDB](http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/)
 
