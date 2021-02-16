@@ -12,15 +12,20 @@ function makeGraphs(error, projectsJson, statesJson) {
 	var dateFormat = d3.time.format("%Y-%m-%d");
 	donorschooseProjects.forEach(function(d) {
 		d["date_posted"] = dateFormat.parse(d["date_posted"]);
-		d["date_posted"].setDate(1);
-		d["total_donations"] = +d["total_donations"];
+		if (d["date_posted"]) {
+			d["date_posted"].setDate(1);
+			d["total_donations"] = +d["total_donations"];
+		}
 	});
 
 	//Create a Crossfilter instance
 	var ndx = crossfilter(donorschooseProjects);
 
 	//Define Dimensions
-	var dateDim = ndx.dimension(function(d) { return d["date_posted"]; });
+	var dateDim = ndx.dimension(function(d) { 
+		if (d["date_posted"]) {
+			return d["date_posted"]; 
+		}});
 	var resourceTypeDim = ndx.dimension(function(d) { return d["resource_type"]; });
 	var povertyLevelDim = ndx.dimension(function(d) { return d["poverty_level"]; });
 	var stateDim = ndx.dimension(function(d) { return d["school_state"]; });

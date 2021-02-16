@@ -23,7 +23,7 @@ the data file is huge, import the csv to excel, query editor to add index column
 https://superuser.com/questions/1414244/limiting-the-number-of-rows-imported-into-excel-from-a-large-csv-file
 
 3. import the data, in regular command line
-mongoimport -d donorschoose -c projects --type csv --file opendata_projects.csv --headerline
+mongoimport -d donorschoose -c projects --type csv --file opendata_projects_f.csv --headerline
 
 4. start another console 
 mongo
@@ -34,7 +34,7 @@ note it is case sensitive
 find 5 attributes
 
 5. Interacting with MongoDB using Python
-pythong_mongodb.py
+python_mongodb.py
 
 6. Buiding the server
 python app.py
